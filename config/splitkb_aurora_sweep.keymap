@@ -35,7 +35,7 @@
    &kp Q &kp W      &kp E      &kp R       &kp T   &kp Y &kp U        &kp I          &kp O        &kp P
    &kp A &hm LALT S &hm LGUI D &hm LCTRL F &kp G   &kp H &hm RCTRL J  &hm RGUI K     &hm RALT L   &kp SEMI
    &kp Z &kp X      &kp C      &kp V       &kp B   &kp N &kp M        &kp COMMA      &kp DOT      &kp FSLH
-                                &mo 1 &kp LSHFT   &kp SPACE &mo 2
+                                 &mo 1 &kp LSHFT   &kp SPACE &mo 2
                         >;
                 };
                 
@@ -43,12 +43,12 @@
 // ------------------------------------------------------------------
 // | TAB |     |     |     |     |   |     |      |     |     |BSPC |
 // | ESC |     |     |     |     |   |  _  |  +   |  {  |  }  |  |  |
-// |     |     |     |     |     |   |     |      |     |     |     |
+// |     |     |     |     |     |   |     |      |     |     | ENT |
 //                   |LWR  |SHFT |   | SPC | RSE  |
                         bindings = <
    &kp TAB &trans  &trans  &trans  &trans   &trans    &trans   &trans    &trans    &kp BSPC
    &kp ESC &trans  &trans  &trans  &trans   &kp UNDER &kp PLUS &kp LBRC  &kp RBRC  &kp PIPE
-   &trans  &trans  &trans  &trans  &trans   &trans    &trans   &trans    &trans    &trans
+   &trans  &trans  &trans  &trans  &trans   &trans    &trans   &trans    &trans    &kp RET
                           &mo 1 &kp LSHFT   &kp SPACE &mo 2
                         >;
                 };
@@ -69,15 +69,15 @@
                 
                 adjust_layer {
 // ------------------------------------------------------------------
-// |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7  |  F8 |  F9 | F10 |
-// |     |     |     |     | F11 |   | F12 |      |     |     |     |
-// |     |     |     |     |     |   |     |      |     |     |     |
-//                   |LWR  |SHFT |   | SPC | RSE  |
+// |  F1 |  F2  |  F3  |  F4  |  F5 |   |  F6 |  F7  |  F8 |  F9 | F10 |
+// |  ~  | BT 0 | BT 2 | BT 4 | F11 |   | LEFT| DOWN |  UP | LEFT|     |
+// |BTCLR| BT 1 | BT 3 |      | F12 |   |     |      |     |     |     |
+//                     |LWR   |SHFT |   | SPC | RSE  |
                         bindings = <
-   &kp F1    &kp F2  &kp F3  &kp F4  &kp F5   &kp F6    &kp F7   &kp F8    &kp F9    &kp F10
-   &kp TILDE &trans  &trans  &trans  &kp F11  &kp F12   &trans   &trans    &trans    &trans
-   &trans    &trans  &trans  &trans  &trans   &trans    &trans   &trans    &trans    &trans
-                            &mo 1 &kp LSHFT   &kp SPACE &mo 2
+   &kp F1     &kp F2   &kp F3   &kp F4   &kp F5   &kp F6    &kp F7   &kp F8    &kp F9    &kp F10
+   &kp TILDE  &bt BT_0 &bt BT_2 &bt BT_4 &kp F11  &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &trans
+   &bt BT_CLR &bt BT_1 &bt BT_3 &trans   &kp F12  &trans    &trans   &trans    &trans    &trans
+                                 &mo 1 &kp LSHFT  &kp SPACE &mo 2
                         >;
                 };
         };
