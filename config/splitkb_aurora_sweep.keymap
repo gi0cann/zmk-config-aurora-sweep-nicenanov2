@@ -33,9 +33,9 @@
 //                   |LWR  |SHFT |   | SPC | RSE  |
                         bindings = <
    &kp Q       &kp W      &kp E      &kp R       &kp T     &kp Y &kp U        &kp I          &kp O        &kp P
-   &hm LSHFT A &hm LALT S &hm LGUI D &hm LCTRL F &kp G     &kp H &hm RCTRL J  &hm RGUI K     &hm RALT L   &hm RSHFT SEMI
+   &kp A       &hm LALT S &hm LGUI D &hm LCTRL F &kp G     &kp H &hm RCTRL J  &hm RGUI K     &hm RALT L   &kp SEMI
    &kp Z       &kp X      &kp C      &kp V       &kp B     &kp N &kp M        &kp COMMA      &kp DOT      &kp RET
-                             &lt 1 TAB &mt LSHIFT BSPC     &kp SPACE &lt 2 ESC
+                             &lt 1 TAB &mt LSHIFT BSPC     &kp SPACE &mo 2
                         >;
                 };
                 
@@ -69,15 +69,15 @@
                 
                 adjust_layer {
 // ------------------------------------------------------------------
-// |  F1 |  F2  |  F3  |  F4  |  F5 |   |  F6 |  F7  |  F8 |  F9 | F10 |
-// |  ~  | BT 0 | BT 2 | BT 4 | F11 |   | LEFT| DOWN |  UP | LEFT|     |
-// |BTCLR| BT 1 | BT 3 |      | F12 |   |     |      |     |     |     |
+// |  F1  |  F2  |  F3  |  F4  |  F5 |   |  F6 |  F7  |  F8 |  F9 | F10 |
+// |  BT 0| BT 1 | BT 2 | BT 3 | F11 |   | LEFT| DOWN |  UP | LEFT|     |
+// |BTCLR | BT 4 |   |      | F12 |   |     |      |     |     |     |
 //                     |LWR   |SHFT |   | SPC | RSE  |
                         bindings = <
-   &kp F1     &kp F2   &kp F3   &kp F4  &kp F5       &kp F6    &kp F7   &kp F8    &kp F9    &kp F10
-   &kp TILDE  &bt BT_SEL 0 &bt BT_SEL 2 &bt BT_SEL 4 &kp F11  &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &trans
-   &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 3 &trans       &kp F12  &trans    &trans   &trans    &trans    &trans
-                                 &trans &trans       &trans &trans
+   &kp F1        &kp F2       &kp F3       &kp F4       &kp F5     &kp F6    &kp F7   &kp F8    &kp F9    &kp F10
+   &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &kp F11    &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &trans
+   &bt BT_CLR    &bt BT_SEL 4 &trans       &trans       &kp F12    &trans    &trans   &trans    &trans    &trans
+                                                  &trans &trans    &trans &trans
                         >;
                 };
         };
